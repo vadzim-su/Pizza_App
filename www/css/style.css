@@ -1,0 +1,464 @@
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+/* header */
+
+.header {
+  background-color: #eaeaea;
+  padding: 35px 0;
+}
+
+.header__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__block img {
+  cursor: pointer;
+  display: block;
+}
+
+.header__block img:hover {
+  opacity: 0.7;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  max-width: 540px;
+}
+
+.navbar li {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar li a {
+  margin: auto;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #494949;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+.navbar li a:hover {
+  color: #ee252d;
+  transition: ease 0.3s all;
+}
+
+.navbar li:not(:last-of-type)::after {
+  display: inline-block;
+  content: "|";
+  margin: auto 20px;
+}
+
+/* banner */
+
+.banner {
+  background-image: url(../image/banner.png);
+  padding: 50px 0 110px;
+}
+
+.banner__block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__block img {
+  display: flex;
+  margin: auto;
+}
+
+.create {
+  padding: 200px 0 0;
+}
+
+.create h1 {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.create p {
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 400;
+  margin-bottom: 45px;
+}
+
+.create a {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 30px;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.create a:hover {
+  color: #272727;
+  background-color: #fff;
+}
+
+.page {
+  background-color: #eaeaea;
+  padding: 125px 0 95px;
+}
+
+.page h2 {
+  font-size: 45px;
+  color: #282828;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.page h2::before {
+  display: inline-block;
+  content: url(../image/item.png);
+  margin-right: 25px;
+}
+
+.page h2::after {
+  display: inline-block;
+  content: url(../image/item.png);
+  margin-left: 25px;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 30px;
+  color: #959595;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page ul {
+  max-width: 620px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 65px;
+}
+
+.page ul li a {
+  font-size: 18px;
+  color: #494848;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.page li:not(:last-of-type)::after {
+  display: inline-block;
+  content: "|";
+  margin: auto 20px;
+  font-weight: bold;
+}
+
+.page ul li a::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 5px;
+  background-color: red;
+  margin: auto;
+  margin-top: 9px;
+  position: absolute;
+  display: none;
+}
+
+.page ul li a::before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 7px solid red;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 22px;
+  display: none;
+}
+
+.page ul li a:hover:after {
+  display: block;
+}
+
+.page ul li a:hover:before {
+  display: block;
+}
+
+.info {
+  padding: 60px 0;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.11));
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.item {
+  padding: 0 65px;
+}
+
+.number {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.number img {
+  display: flex;
+  margin: auto;
+}
+
+.number span {
+  font-size: 120px;
+  color: #282828;
+  font-family: "Roboto";
+  font-weight: 900;
+  display: block;
+  line-height: 1;
+}
+
+.description span {
+  display: block;
+  font-size: 45px;
+  color: #282828;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.description p {
+  font-size: 18px;
+  line-height: 24px;
+  color: #282828;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-align: left;
+}
+
+.btn {
+  padding: 35px 0;
+  display: block;
+  max-width: 470px;
+  text-align: center;
+  background: url(../image/bg.png);
+  opacity: 0.85;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 30px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.footer {
+  padding: 45px 0;
+  background: url(../image/footer.png);
+}
+
+.footer p {
+  font-size: 20px;
+  color: #eaeaea;
+  font-family: "Roboto";
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1170px) {
+  .wrapper {
+    width: calc(100% - 80px);
+  }
+
+  .header {
+    padding: 20px 0;
+  }
+
+  .header__block {
+    display: block;
+  }
+
+  .header__block img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .navbar {
+    margin: 0 auto;
+  }
+
+  .banner__block {
+    display: block;
+  }
+
+  .banner {
+    padding: 80px 0;
+  }
+
+  .create {
+    padding: 40px 0;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .create h1 {
+    text-align: center;
+  }
+
+  .create p {
+    text-align: center;
+  }
+
+  .create a {
+    display: block;
+  }
+
+  .banner__block img {
+    width: 50%;
+  }
+
+  .page {
+    padding: 70px 0 40px;
+  }
+
+  .item {
+    padding: 0 30px;
+  }
+
+  .footer {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: calc(100% - 40px);
+  }
+
+  .header__block img {
+    margin-bottom: 0;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .banner {
+    padding: 20px 0;
+  }
+
+  .create {
+    padding: 0 0 40px;
+  }
+
+  .page {
+    padding: 30px 0 20px;
+  }
+
+  .info {
+    padding: 30px 0;
+    margin-bottom: 30px;
+  }
+
+  .page h2::before {
+    display: block;
+    content: url(../image/item.png);
+    margin: 0 auto;
+  }
+
+  .page h2::after {
+    display: block;
+    content: url(../image/item.png);
+    margin: 0 auto;
+  }
+
+  .page ul {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 65px;
+  }
+
+  .page li:not(:last-of-type)::after {
+    display: inline-block;
+    content: "";
+  }
+
+  .page ul li {
+    text-align: center;
+  }
+
+  .page ul li a {
+    font-size: 26px;
+  }
+
+  .info {
+    display: block;
+  }
+
+  .number {
+    display: block;
+  }
+
+  .item {
+    margin-bottom: 30px;
+  }
+
+  .item span {
+    display: block;
+    text-align: center;
+  }
+
+  .item p {
+    text-align: center;
+  }
+
+  .btn {
+    max-width: 375px;
+    background-size: contain;
+  }
+
+  .footer {
+    padding: 25px 0;
+  }
+
+  .footer p {
+    font-size: 16px;
+  }
+}
