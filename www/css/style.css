@@ -7,7 +7,7 @@ a {
 }
 
 .wrapper {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -30,6 +30,10 @@ a {
 
 .header__block img:hover {
   opacity: 0.7;
+}
+
+i.fa-hamburger {
+  display: none;
 }
 
 .navbar {
@@ -246,6 +250,7 @@ a {
   font-weight: 900;
   display: block;
   line-height: 1;
+  text-align: center;
 }
 
 .description span {
@@ -354,12 +359,39 @@ a {
     width: 50%;
   }
 
+  .page h2::before {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .page h2::after {
+    display: block;
+    margin: 0 auto;
+  }
+
   .page {
     padding: 70px 0 40px;
   }
 
   .item {
     padding: 0 30px;
+  }
+
+  .item:nth-child(2) .number {
+    margin-bottom: 20px;
+  }
+
+  .description span {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .description p {
+    text-align: center;
+  }
+
+  .number {
+    display: block;
   }
 
   .footer {
@@ -372,12 +404,27 @@ a {
     width: calc(100% - 40px);
   }
 
+  .header__block {
+    position: relative;
+  }
+
   .header__block img {
     margin-bottom: 0;
+    width: 50%;
   }
 
   .navbar {
     display: none;
+  }
+
+  i.fa-hamburger {
+    display: block;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 0;
+    font-size: 30px;
+    color: #ea2229;
   }
 
   .banner {
@@ -397,18 +444,6 @@ a {
     margin-bottom: 30px;
   }
 
-  .page h2::before {
-    display: block;
-    content: url(../image/item.png);
-    margin: 0 auto;
-  }
-
-  .page h2::after {
-    display: block;
-    content: url(../image/item.png);
-    margin: 0 auto;
-  }
-
   .page ul {
     display: block;
     margin: 0 auto;
@@ -416,8 +451,15 @@ a {
   }
 
   .page li:not(:last-of-type)::after {
-    display: inline-block;
+    display: block;
     content: "";
+    width: 90%;
+    box-sizing: border-box;
+    height: 3px;
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .page ul li {
@@ -428,11 +470,15 @@ a {
     font-size: 26px;
   }
 
-  .info {
-    display: block;
+  .page ul li a:hover:after {
+    display: none;
   }
 
-  .number {
+  .page ul li a:hover:before {
+    display: none;
+  }
+
+  .info {
     display: block;
   }
 
@@ -452,13 +498,14 @@ a {
   .btn {
     max-width: 375px;
     background-size: contain;
+    font-size: 24px;
   }
 
   .footer {
-    padding: 25px 0;
+    padding: 10px 0;
   }
 
   .footer p {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
